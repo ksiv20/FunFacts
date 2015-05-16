@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FactBook.h"
+#import "ColorWheel.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
     // allocate a space in memory for FactBook class then call its init method.
     self.factBook = [[FactBook alloc] init];
     self.funFactLabel.text = [self.factBook randomFact];
+    
+    self.colorWheel = [[ColorWheel alloc]init];
+
+    UIColor *randomColor = [self.colorWheel randomColor];
+    self.view.backgroundColor = randomColor;
+    self.funFactButton.tintColor = randomColor;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,8 +37,12 @@
 }
 
 - (IBAction)showFunFact {
-    
 //    NSLog(@"showFunFact button pressed");
+    
     self.funFactLabel.text = [self.factBook randomFact];
+    
+    UIColor *randomColor = [self.colorWheel randomColor];
+    self.view.backgroundColor = randomColor;
+    self.funFactButton.tintColor = randomColor;
 }
 @end

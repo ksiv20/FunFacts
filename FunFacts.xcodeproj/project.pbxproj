@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E2B9C6E31B0721A900CF1729 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C6E21B0721A900CF1729 /* FactBook.m */; };
+		E2B9C6E61B0739A600CF1729 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B9C6E51B0739A600CF1729 /* ColorWheel.m */; };
 		E2C90DCB1B06CEF6005B496A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C90DCA1B06CEF6005B496A /* main.m */; };
 		E2C90DCE1B06CEF6005B496A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C90DCD1B06CEF6005B496A /* AppDelegate.m */; };
 		E2C90DD11B06CEF6005B496A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C90DD01B06CEF6005B496A /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		E2B9C6E11B0721A900CF1729 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
 		E2B9C6E21B0721A900CF1729 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		E2B9C6E41B0739A600CF1729 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		E2B9C6E51B0739A600CF1729 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 		E2C90DC51B06CEF6005B496A /* FunFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C90DC91B06CEF6005B496A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C90DCA1B06CEF6005B496A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				E2C90DD01B06CEF6005B496A /* ViewController.m */,
 				E2B9C6E11B0721A900CF1729 /* FactBook.h */,
 				E2B9C6E21B0721A900CF1729 /* FactBook.m */,
+				E2B9C6E41B0739A600CF1729 /* ColorWheel.h */,
+				E2B9C6E51B0739A600CF1729 /* ColorWheel.m */,
 				E2C90DD21B06CEF6005B496A /* Main.storyboard */,
 				E2C90DD51B06CEF6005B496A /* Images.xcassets */,
 				E2C90DD71B06CEF6005B496A /* LaunchScreen.xib */,
@@ -229,6 +234,7 @@
 				E2C90DCE1B06CEF6005B496A /* AppDelegate.m in Sources */,
 				E2B9C6E31B0721A900CF1729 /* FactBook.m in Sources */,
 				E2C90DCB1B06CEF6005B496A /* main.m in Sources */,
+				E2B9C6E61B0739A600CF1729 /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
