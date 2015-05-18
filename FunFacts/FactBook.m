@@ -25,6 +25,14 @@
                   @"Some penguins can leap 2-3 meters out of the water.",
                   @"On average, it takes 66 days to form a new habit.",
                   @"Mammoths still walked the Earth when the Great Pyramid was being built.",
+                  @"Human thigh bones are stronger than concrete.",
+                  @"It’s possible to lead a cow upstairs…but not downstairs.",
+                  @"Heart attacks are more likely to happen on a Monday.",
+                  @"An average person’s yearly fast food intake will contain 12 pubic hairs.",
+                  @"95% of people text things they could never say in person.",
+                  @"Banging your head against a wall burns 150 calories an hour.",
+                  @"The average woman uses her height in lipstick every 5 years.",
+                  @"If you lift a kangaroo’s tail off the ground it can’t hop.",
                   nil];
     }
     return self;
