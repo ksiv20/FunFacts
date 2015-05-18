@@ -10,10 +10,14 @@
 
 @implementation FactBook
 
+/*
+ * Initializer method.
+ */
 - (instancetype)init{
     
     self = [super init];
     if(self){
+        // initialize the facts array.
         _facts = [[NSArray alloc] initWithObjects:
                   @"Ants stretch when they wake up.",
                   @"Ostriches can run faster than horses.",
@@ -39,6 +43,10 @@
 }
 
 
+/*
+ * Randomly selects a random fact from the facts array.
+ * return: A fact from the facts array.
+ */
 - (NSString *)randomFact {
 
     int randomIndex = arc4random_uniform((int)self.facts.count);

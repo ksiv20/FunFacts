@@ -8,15 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+// include the user defined objects
 @class FactBook;
 @class ColorWheel;
 
+
 @interface ViewController : UIViewController
 
+// view components
 @property (weak, nonatomic) IBOutlet UILabel *funFactLabel;
+@property (weak, nonatomic) IBOutlet UIButton *funFactButton;
+
+// array from user defined classes
 @property (strong, nonatomic) FactBook *factBook;
 @property (strong, nonatomic) ColorWheel *colorWheel;
-@property (weak, nonatomic) IBOutlet UIButton *funFactButton;
 
 @end
 

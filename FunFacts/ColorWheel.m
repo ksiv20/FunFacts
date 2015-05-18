@@ -10,10 +10,14 @@
 
 @implementation ColorWheel
 
+/*
+ * Initializer method.
+ */
 - (instancetype)init
 {
     self = [super init];
     if (self) {
+        // initialize the background color array with color values
         _bgColors = [[NSArray alloc] initWithObjects:
                      [UIColor colorWithRed:255/255.0 green:110/255.0 blue:110/255.0 alpha:1.0], //pink color
                      [UIColor colorWithRed:90/255.0 green:187/255.0 blue:181/255.0 alpha:1.0], //teal color
@@ -28,6 +32,11 @@
     return self;
 }
 
+
+/*
+ * Randomly selects a random color from the bgColors array.
+ * return: A color from the bgColors array.
+ */
 
 - (UIColor *)randomColor{
     int randomIndex = arc4random_uniform((int)self.bgColors.count);

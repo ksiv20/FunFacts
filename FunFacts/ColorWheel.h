@@ -11,8 +11,10 @@
 
 @interface ColorWheel : NSObject
 
+// array to hold all the colors for the background
 @property (strong, nonatomic) NSArray *bgColors;
 
+// declare method to get a random color from the bgColors array
 - (UIColor *)randomColor;
 
 @end

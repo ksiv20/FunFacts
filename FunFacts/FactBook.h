@@ -10,8 +10,10 @@
 
 @interface FactBook : NSObject
 
+// array to hold all the facts
 @property (strong, nonatomic) NSArray *facts;
 
+// declare method to get a random fact from the facts array
 - (NSString *)randomFact;
 
 @end
