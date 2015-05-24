@@ -28,6 +28,8 @@
                      [UIColor colorWithRed:105/255.0 green:94/255.0 blue:133/255.0 alpha:1.0], //purple color
                      [UIColor colorWithRed:85/255.0 green:176/255.0 blue:112/255.0 alpha:1.0], //green color
                      nil];
+        // initialize the previously used color index to be 0
+        _lastColor = @0;
     }
     return self;
 }
@@ -39,7 +41,22 @@
  */
 
 - (UIColor *)randomColor{
+    
+    // generate a random number to use as the index
     int randomIndex = arc4random_uniform((int)self.bgColors.count);
+    
+    // keep generating a random number as long as it's the same with the one
+    // that was used previously
+    while (randomIndex == [self.lastColor intValue]) {
+        randomIndex = arc4random_uniform((int)self.bgColors.count);
+    }
+    
+    NSLog(@"-- Color ---");
+    NSLog(@"last index: %@,  new index: %d", self.lastColor, randomIndex);
+    
+    // store the randomIndex to be used as the next previous
+    self.lastColor = [NSNumber numberWithInt:randomIndex];
+    
     return [self.bgColors objectAtIndex:randomIndex];
 }
 

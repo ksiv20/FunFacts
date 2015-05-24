@@ -38,6 +38,8 @@
                   @"The average woman uses her height in lipstick every 5 years.",
                   @"If you lift a kangaroo’s tail off the ground it can’t hop.",
                   nil];
+        // initialize the previously used fact index to be 0
+        _lastFact = @0;
     }
     return self;
 }
@@ -48,8 +50,21 @@
  * return: A fact from the facts array.
  */
 - (NSString *)randomFact {
-
+    
+    // generate a random number to use as the index
     int randomIndex = arc4random_uniform((int)self.facts.count);
+    
+    // keep generating a random number as long as it's the same with the one
+    // that was used previously
+    while (randomIndex == [self.lastFact intValue]) {
+        randomIndex = arc4random_uniform((int)self.facts.count);
+    }
+    
+    NSLog(@"-- Fact ---");
+    NSLog(@"last index: %@,  new index: %d", self.lastFact, randomIndex);
+    
+    // store the randomIndex to be used as the next previous
+    self.lastFact = [NSNumber numberWithInt:randomIndex];
 
     return [self.facts objectAtIndex:randomIndex];
 }

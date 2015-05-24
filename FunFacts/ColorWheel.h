@@ -11,6 +11,9 @@
 
 @interface ColorWheel : NSObject
 
+// keep track of the color used previously
+@property (nonatomic) NSNumber *lastColor;
+
 // array to hold all the colors for the background
 @property (strong, nonatomic) NSArray *bgColors;
 

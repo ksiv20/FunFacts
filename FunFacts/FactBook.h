@@ -10,6 +10,9 @@
 
 @interface FactBook : NSObject
 
+// keep track of the previously displayed fact
+@property (nonatomic) NSNumber *lastFact;
+
 // array to hold all the facts
 @property (strong, nonatomic) NSArray *facts;
 
